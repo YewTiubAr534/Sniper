@@ -1,0 +1,65 @@
+def start_greet():
+    print(general_greet)
+
+def greet_name():
+    global name_length
+    name1 = Ahyan
+    name_length = len(name1)
+    if name_length >= 2:
+        name_show = f"Well, hey there {name1}!"
+        print(name_show)
+
+def check_gender_instructions():
+    print("To assert your gender, enter the number assigned to your gender-\n man - 1\n woman - 2")
+
+def check_gender():
+    global gender
+    gender = 1
+    if gender == man:
+        gen_text = male_text
+        print(gen_text)
+    elif gender == woman:
+        gen_text = female_text
+        print(gen_text)
+    else:
+        print("Please provide an accurate response!")
+
+def check_age():
+    global age_input
+    age_input = 13
+    if age_input >= min_age:
+        sending_message = affirmation_message
+        print(sending_message)
+    elif age_input < min_age:
+        sending_message = prohibition_message
+        print(sending_message)
+
+general_greet = "Hey there! What's your name?"
+woman = 2
+man = 1
+male_text = "You are a man."
+female_text = "You are a woman."
+min_age = 13
+affirmation_message = "You're age eligible for this website"
+prohibition_message = "Sorry, you're not old enough to continue"
+
+import time
+
+start_greet()
+time.sleep(2)
+greet_name()
+time.sleep(2)
+if name_length <= 1:
+    print("Please enter a valid name")
+elif name_length >= 2:
+    check_gender_instructions()
+    time.sleep(3)
+    check_gender()
+    time.sleep(2)
+    if gender == 2:
+        check_age()
+    elif gender == 1:
+        check_age()
+        time.sleep(2)
+        if age_input >= min_age:
+            print(f"Thank you so much for checking this website out {name1}!")
