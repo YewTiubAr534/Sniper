@@ -63,3 +63,4 @@ elif name_length >= 2:
         time.sleep(2)
         if age_input >= min_age:
             print(f"Thank you so much for checking this website out {name1}!")
+            print("The man behind this website is also available on GitHub. Check him out @YewTiubAr534")
