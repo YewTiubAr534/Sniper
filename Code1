@@ -3,7 +3,7 @@ def start_greet():
 
 def greet_name():
     global name_length
-    name1 = Ahyan
+    name1 = input()
     name_length = len(name1)
     if name_length >= 2:
         name_show = f"Well, hey there {name1}!"
@@ -14,7 +14,7 @@ def check_gender_instructions():
 
 def check_gender():
     global gender
-    gender = 1
+    gender = int(input())
     if gender == man:
         gen_text = male_text
         print(gen_text)
@@ -26,7 +26,7 @@ def check_gender():
 
 def check_age():
     global age_input
-    age_input = 13
+    age_input = int(input())
     if age_input >= min_age:
         sending_message = affirmation_message
         print(sending_message)
