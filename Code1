@@ -11,7 +11,7 @@ def greet_name():
         print(name_show)
 
 def check_gender_instructions():
-    print("To assert your gender, enter the number assigned to your gender-\n pole - 1\n hole - 2")
+    print("To assert your gender, enter the number assigned to your gender-\n male - 1\n female - 2")
 
 def check_gender():
     global gender
@@ -77,3 +77,4 @@ elif name_length >= 2:
             print(f"Thank you so much for checking this code out {name1}!")
             time.sleep(2)
             print("The man behind this code is also available on GitHub. Check him out @YewTiubAr534")
+            
