@@ -2,6 +2,7 @@ def start_greet():
     print(general_greet)
 
 def greet_name():
+    global name1
     global name_length
     name1 = input()
     name_length = len(name1)
@@ -57,10 +58,19 @@ elif name_length >= 2:
     check_gender()
     time.sleep(2)
     if gender == 2:
+        time.sleep(2)
+        print("Please enter your age.")
         check_age()
+        if age_input >= min_age:
+           print(f"Thank you so much for checking this code out {name1}!")
+           time.sleep(2)
+           print("The man behind this code is also available on GitHub. Check him out @YewTiubAr534")
     elif gender == 1:
+        time.sleep(2)
+        print("Please enter your age.")
         check_age()
         time.sleep(2)
         if age_input >= min_age:
-            print(f"Thank you so much for checking this website out {name1}!")
-            print("The man behind this website is also available on GitHub. Check him out @YewTiubAr534")
+            print(f"Thank you so much for checking this code out {name1}!")
+            time.sleep(2)
+            print("The man behind this code is also available on GitHub. Check him out @YewTiubAr534")
