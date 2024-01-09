@@ -173,9 +173,14 @@ def cap_or_low():
         time.sleep(5)
         clear_cons()
         repetition_size()
+    else:
+        clear_cons()
+        print("Wrong input genius, try again.")
+        clear_cons()
+        cap_or_low()
 
 def calculate():
-    print("Enter the serial number of what you want mathematical function you want to perform!")
+    print("Enter the serial number of what mathematical function you want to perform!")
     time.sleep(2)
     print("1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Square\n6. Cube")
     req_function = int(input("Function "))
@@ -623,10 +628,10 @@ def compute_div2(a, b):
     print("Result:", d, "\nRemainder:", e)
 def compute_sq(a):
     d = a*a
-    return("Result:", d)
+    return"Result:", d
 def compute_cube(a):
     d = a**3
-    return("Result:", d)
+    return"Result:", d
 
 def repetition_clone():
     clear_cons()
@@ -709,7 +714,7 @@ def repetition_maths():
         repetition_maths()
 
 def repetition_joke():
-    time.sleep(20)
+    time.sleep(22.5)
     clear_cons()
     print("Type 1 to do this again\nType 2 to do something else\nType 3 to finish")
     decision_input = int(input("Choice - "))
